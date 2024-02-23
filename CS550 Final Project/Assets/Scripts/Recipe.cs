@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 [Serializable]
 public class Recipe
@@ -53,5 +52,33 @@ public enum Ingredient
     BrownSugar,
     CiderVinegar,
     GarlicPowder,
-    DriedRosemary
+    DriedRosemary,
+    Zucchinis,
+    Salsa,
+    CornTortillas,
+    CheddarCheese,
+    Eggs,
+    ItalianSeasoning,
+    RedPepperFlakes,
+    TilapiaFillets,
+    GroundBeef,
+    Cabbage,
+    CannedRedBeans,
+    TomatoSauce,
+    Brocolli,
+    PicanteSauce,
+    CottageCheese,
+    FlourTortillas,
+    FrozenSpinach,
+    BalsamicVinegar,
+    FreshBasil,
+    PlumTomatoes,
+    BonelessChickenBreasts,
+    CannedOlives,
+    RedOnions,
+    DriedBasil,
+    DriedOregano,
+    MozerellaCheese,
+    FetaCheese,
+
 }
