@@ -336,7 +336,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6320892565924562948}
         m_TargetAssemblyTypeName: RecipeButton, Assembly-CSharp
-        m_MethodName: OpenRecipe
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

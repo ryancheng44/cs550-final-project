@@ -1,13 +1,21 @@
 using System;
 
+// The Recipe class is marked as Serializable, 
+// which allows instances of the class to be edited in the Unity Inspector
 [Serializable]
 public class Recipe
 {
+    // The name of the recipe
     public string name;
+
+    // The URL of the website where the recipe is found
     public string websiteURL;
+
+    // An array of ingredients required for the recipe
     public Ingredient[] ingredients;
 }
 
+// An enumeration of possible ingredients
 public enum Ingredient
 {
     Butter,
@@ -80,5 +88,5 @@ public enum Ingredient
     DriedOregano,
     MozerellaCheese,
     FetaCheese,
-
+    // Add more ingredients as needed
 }

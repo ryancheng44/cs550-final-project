@@ -333,7 +333,6 @@ MonoBehaviour:
   - name: Contest-Winning Greek Pasta Bake
     websiteURL: https://www.tasteofhome.com/recipes/contest-winning-greek-pasta-bake/
     ingredients: 080000003f000000360000001f0000003b00000040000000410000001d00000042000000430000004400000045000000
-  availableRecipes: []
 --- !u!114 &63259013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,13 +345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef58ee3a036e4a24af6c3b9ec85f010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollRect: {fileID: 978667283}
-  ingredientPrefab: {fileID: 402229863071768722, guid: 2becae3f9218b4130a52dbcc78988579, type: 3}
-  recipePrefab: {fileID: 4805559834618034449, guid: e5bb92ac7bc2e48a199313bb2ce13f90, type: 3}
-  availableRecipesText: {fileID: 965876501}
-  selectIngredientsContent: {fileID: 838712718}
-  availableRecipesContent: {fileID: 279417080}
-  insructionsContent: {fileID: 0}
   instructionsUI:
   - {fileID: 61195128}
   - {fileID: 326107647}
@@ -366,6 +358,13 @@ MonoBehaviour:
   - {fileID: 747105274}
   - {fileID: 129520916}
   - {fileID: 279417079}
+  ingredientButtonPrefab: {fileID: 402229863071768722, guid: 2becae3f9218b4130a52dbcc78988579, type: 3}
+  recipeButtonPrefab: {fileID: 4805559834618034449, guid: e5bb92ac7bc2e48a199313bb2ce13f90, type: 3}
+  noRecipesTextPrefab: {fileID: 8819345081617956826, guid: 4041d815e92f149618fc6844c5a541b2, type: 3}
+  selectIngredientsContent: {fileID: 838712718}
+  availableRecipesContent: {fileID: 279417080}
+  scrollRect: {fileID: 978667283}
+  availableRecipesText: {fileID: 965876501}
 --- !u!1 &129520916
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +646,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -50, y: 0}
-  m_SizeDelta: {x: -100, y: -571.4}
+  m_SizeDelta: {x: -100, y: -680}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &279417081
 MonoBehaviour:
@@ -2190,11 +2189,11 @@ MonoBehaviour:
   m_text: The purpose of this program is to provide delectable and nutritious dishes
     that you can make with the ingredients that you have on hand. First, you will
     be prompted to select the ingredients that you have. Then, you will be given
-    a list of dishes that you can make with those ingredients. Clicking on a dish
-    will open a link to its recipe. If you want to see all the dishes that use a
-    certain ingredient, such as peas, or a collection of ingredients, you can press
-    the Switch button to switch between Complete Match mode and Ingredient Spotlight
-    mode. Press Start when you are ready to begin.
+    a list of recipes that you can make with those ingredients. Clicking on a recipe
+    will open a link to more information about it. If you want to see all the recipes
+    that use a certain ingredient, such as peas, or a collection of ingredients,
+    you can press the Switch button to switch between Complete Match mode and Ingredient
+    Spotlight mode. Press Start when you are ready to begin.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ca6c657a68224c4dbc9adb8eced37ec, type: 2}
   m_sharedMaterial: {fileID: 3174439730220877651, guid: 1ca6c657a68224c4dbc9adb8eced37ec, type: 2}
@@ -2367,8 +2366,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 207888873}
   m_HandleRect: {fileID: 207888872}
   m_Direction: 2
-  m_Value: 0.9999995
-  m_Size: 0.91033405
+  m_Value: 1
+  m_Size: 0.87552714
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

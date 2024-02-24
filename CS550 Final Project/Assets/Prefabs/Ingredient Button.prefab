@@ -126,7 +126,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 241350454586234000}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: SelectIngredient
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
